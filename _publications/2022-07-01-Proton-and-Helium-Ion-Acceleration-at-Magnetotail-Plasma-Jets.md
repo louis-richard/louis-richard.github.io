@@ -1,10 +1,11 @@
 ---
 title: "Proton and Helium Ion Acceleration at Magnetotail Plasma Jets"
 collection: publications
-permalink: /publication/2022-01-01-Proton-and-Helium-Ion-Acceleration-at-Magnetotail-Plasma-Jets
+permalink: /publication/2022-07-01-Proton-and-Helium-Ion-Acceleration-at-Magnetotail-Plasma-Jets
 category: manuscripts
-date: 2022-01-01
+date: 2022-07-01
 venue: 'JGR Space Physics'
+paperurl: 'https://doi.org/10.1029/2022JA030430'
 citation: ' L. Richard,  {\relax Yu}. Khotyaintsev,  D. Graham,  A. Vaivads,  R. Nikoukar,  I. Cohen,  D. Turner,  S. Fuselier,  C. Russell, &quot;Proton and Helium Ion Acceleration at Magnetotail Plasma Jets.&quot; JGR Space Physics, 2022.'
 ---
-Use [Google Scholar](https://scholar.google.com/scholar?q=Proton+and+Helium+Ion+Acceleration+at+Magnetotail+Plasma+Jets){:target="_blank"} for full citation
+[Access paper here](https://doi.org/10.1029/2022JA030430){:target="_blank"}
