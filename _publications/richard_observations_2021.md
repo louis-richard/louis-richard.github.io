@@ -1,7 +1,7 @@
 ---
 title: "Observations of Short‐Period Ion‐Scale Current Sheet Flapping"
 collection: publications
-permalink: /publications/Richard et al. - 2021 - Observations of Short‐Period Ion‐Scale Current She.md
+category: manuscripts
 date: 2021-07-13
 venue: "Journal of Geophysical Research: Space Physics"
 paperurl: "https://doi.org/10.1029/2021JA029152"
