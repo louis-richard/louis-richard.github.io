@@ -11,9 +11,11 @@ author_profile: true
 
 {% include base_path %}
 
+<script type='text/javascript' src='https://embed.altmetric.com/assets/embed.js'></script>
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
@@ -23,12 +25,28 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      <div class="archive-item">
+        {% include archive-single.html %}
+        {% if post.doi %}
+          <div class="altmetric-embed"
+               data-badge-type="donut"
+               data-doi="{{ post.doi }}">
+          </div>
+        {% endif %}
+      </div>
+
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
+
+    {% if post.doi %}
+      <div class="altmetric-embed"
+           data-badge-type="donut"
+           data-doi="{{ post.doi }}">
+      </div>
+    {% endif %}
   {% endfor %}
 {% endif %}
 
