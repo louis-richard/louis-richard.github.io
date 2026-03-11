@@ -11,6 +11,15 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign talk_type_order = "Invited Talk,Talk" | split: "," %}
+
+{% for ttype in talk_type_order %}
+  <h2>{{ ttype }}s</h2>
+  <hr />
+
+  {% for post in site.talks reversed %}
+    {% if post.type == ttype %}
+      {% include archive-single-talk.html %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}

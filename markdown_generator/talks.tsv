@@ -1,21 +1,48 @@
 title	type	url_slug	venue	date	location	talk_url	description
-Non-Maxwellianity of Ion Velocity Distributions in the Earth's Magnetosheath	Talk	talk-1	Joint Cluster Plasma Observatory Workshop	2025-10-23	Paris, France	https://clusterpmo.sciencesconf.org/program/graphic/date/2025-10-23 	 
-Particle Energization in Magnetic Reconnection Jets	Invited Talk	talk-2	Workshop on kinetic physics of astrophysical plasmas	2025-06-20	Paris, France	https://indico.in2p3.fr/event/36287/contributions/154193/	 
-Electron Heating by Parallel Electric Fields in Magnetotail Reconnection	Invited Talk	talk-3	2nd European Conference on Magnetic Reconnection in Plasmas	2025-06-18	Torino, Italy	https://ecmrp2.sciencesconf.org/data/pages/Louis_Richard.pdf	 
-Electron Heating by Parallel Electric Fields in Magnetotail Reconnection	Talk	talk-4	11th MMS Community Workshop	2025-05-12	Paris, France	https://10thmmsanniv.sciencesconf.org/641698
-Particle Energization in Magnetic Reconnection Jets	Invited Talk	talk-5	JPP Frontiers of Plasma Physics Colloquium	2025-03-20	online	https://cassyni.com/events/FHdDJTTPT34iSmNc32QqL9
-Python Space Physics (RymdFysik) Utilities: pyRFU	Talk	talk-6	Python in Heliophysics Community (PyHC) telecon	2025-02-17	online	 	 
-Energy Dissipation and Particle Energization in Fast Plasma Flows in the Earth's Magnetotail	Invited Talk	talk-7	Plasma Observatory Workshop	2024-11-13	Rome, Italy	https://plasma-observatory.inaf.it/contact/ 	 
-Acceleration Potential from Flat-top Electron Velocity Distribution within the Reconnection Exhaust	Talk	talk-8	Swedish Space Plasma Meeting	2024-02-16	Stockholm, Sweden	
-Fast Ion Isotropization and Turbulent Energy Transfer in Magnetic Reconnection Jets	Invited Talk	talk-9	AGU Fall Meeting	2023-12-15	San Francisco, USA	https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1289371
-Fast Ion Isotropization by Current Sheet Scattering in Magnetic Reconnection Jets	Invited Talk	talk-10	Los Alamos National Laboratory Cold Plasma Seminars	2023-07-19	online	www.youtube.com/watch?v=ece2IC-mmuA&feature=youtu.be
-Fast Ion Isotropization by Current Sheet Scattering in Magnetic Reconnection Jets	Talk	talk-11	Swedish Space Plasma Meeting	2023-03-13	Uppsala, Sweden	
+Ion Temperature Anisotropy Limits from Magnetic Curvature Scattering in Magnetotail Reconnection Jets	Talk	talk-36	IRF-U seminars	2026-02-04	Uppsala, Sweden	 https://www.space.irfu.se/seminars/
+Particle Energization in Magnetic Reconnection Jets	Invited Talk	talk-35	Subatomic, High-Energy, and Plasma physics seminars	2025-12-05	Göteborg, Sweden	
+Non-Maxwellianity of ion velocity distributions in the Earth's magnetosheath	Talk	talk-35	IRF-U seminars	2025-11-12	Uppsala, Sweden	 https://www.space.irfu.se/seminars/
+Non-Maxwellianity of Ion Velocity Distributions in the Earth's Magnetosheath	Talk	talk-34	Joint Cluster Plasma Observatory Workshop	2025-10-23	Paris, France	https://clusterpmo.sciencesconf.org/program/graphic/date/2025-10-23 	 
+Particle Energization in Magnetic Reconnection Jets	Invited Talk	talk-33	Workshop on kinetic physics of astrophysical plasmas	2025-06-20	Paris, France	https://indico.in2p3.fr/event/36287/contributions/154193/	 
+Electron Heating by Parallel Electric Fields in Magnetotail Reconnection	Invited Talk	talk-32	2nd European Conference on Magnetic Reconnection in Plasmas	2025-06-18	Torino, Italy	https://ecmrp2.sciencesconf.org/data/pages/Louis_Richard.pdf	 
+Electron Heating by Parallel Electric Fields in Magnetotail Reconnection	Talk	talk-31	11th MMS Community Workshop	2025-05-12	Paris, France	https://10thmmsanniv.sciencesconf.org/641698
+Particle Energization in Magnetic Reconnection Jets	Invited Talk	talk-30	Department of Earth, Planetary, and Space Science (EPSS) Space Physics Seminars	2025-04-04	Los Angeles, USA	
+Particle Energization in Magnetic Reconnection Jets	Invited Talk	talk-29	JPP Frontiers of Plasma Physics Colloquium	2025-03-20	online	https://cassyni.com/events/FHdDJTTPT34iSmNc32QqL9
+Python Space Physics (RymdFysik) Utilities: pyRFU	Talk	talk-28	Python in Heliophysics Community (PyHC) telecon	2025-02-17	online	https://www.youtube.com/watch?v=aEfZ6_uAzsc&pp=0gcJCcUKAYcqIYzv 	 
+Ion and Electron Heating in Symmetric Magnetic Reconnection Jets	Invited Talk	talk-27	Oxford Plasma Theory Group Seminars	2024-12-03	Oxford, UK	https://www-thphys.physics.ox.ac.uk/research/plasma/seminarsM24.html
+Energy Dissipation and Particle Energization in Fast Plasma Flows in the Earth's Magnetotail	Invited Talk	talk-26	Plasma Observatory Workshop	2024-11-13	Rome, Italy	https://plasma-observatory.inaf.it/contact/ 	 
+Particle-In-Cell Simulations of Collisionless Magnetic Reconnection	Invited Talk	talk-25	Mini Wrokshop: Computational Fusion and Plasma	2024-09-5	Uppsala, Sweden	
+Turbulence in Magnetic Reconnection Jets from Injection to Sub-Ion Scales	Talk	talk-24	IRF-U seminars	2024-05-12	Uppsala, Sweden	 https://www.space.irfu.se/seminars/
+Energy Conversion and Particle Acceleration in Fast Plasma Flows in the Earth's Magnetotail	Invited Talk	talk-23	Center for Geospace Storms (CGS) Seminars	2024-03-20	online	
+Acceleration Potential from Flat-top Electron Velocity Distribution within the Reconnection Exhaust	Talk	talk-22	Swedish Space Plasma Meeting	2024-02-16	Stockholm, Sweden	https://www.kth.se/sv/emp/sspm-2024
+Energy Conversion and Particle Acceleration at Turbulent Plasma Jet Fronts	Talk	talk-21	Uppsala University Astronomy/Space Physics seminars	2024-01-16	Uppsala, Sweden	 https://indico.uu.se/event/1587/
+Fast Ion Isotropization and Turbulent Energy Transfer in Magnetic Reconnection Jets	Invited Talk	talk-20	AGU Fall Meeting	2023-12-15	San Francisco, USA	https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1289371
+Fast Ion Isotropization by Current Sheet Scattering in Magnetic Reconnection Jets	Invited Talk	talk-19	Helsinki Space Physics Group Journal Club	2023-10-24	online	
+Energy conversion and particle acceleration at turbulent plasma jet Fronts	Talk	talk-18	Uppsala University Astronomy/Space Physics seminars	2023-09-07	Uppsala, Sweden	 https://indico.uu.se/event/1399/
+Fast Ion Isotropization by Current Sheet Scattering in Magnetic Reconnection Jets	Invited Talk	talk-17	Los Alamos National Laboratory Cold Plasma Seminars	2023-07-19	online	www.youtube.com/watch?v=ece2IC-mmuA&feature=youtu.be
+Energy Conversion and Particle Acceleration at Turbulent Plasma Jet Fronts	Invited Talk	talk-16	Laboratoire de Physique des Plasmas Seminars	2023-07-10	Paris, France	
+Fast Ion Isotropization by Current Sheet Scattering in Magnetic Reconnection Jets	Talk	talk-15	IRF-U seminars	2023-06-21	Uppsala, Sweden	 https://www.space.irfu.se/seminars/
+Fast Ion Isotropization by Current Sheet Scattering in Magnetic Reconnection Jets	Talk	talk-14	Swedish Space Plasma Meeting	2023-03-13	Uppsala, Sweden	 https://www.space.irfu.se/workshops/SSP2023/
+Are Dipolarization Fronts a Typical Feature of Magnetotail Plasma Jets Fronts?	Talk	talk-13	IRF-U seminars	2023-02-01	Uppsala, Sweden	 https://www.space.irfu.se/seminars/
 Ion temperature anisotropy in magnetotail plasma jets	Talk	talk-12	MMS Fall Community Workshop	2022-10-05	online	https://lasp.colorado.edu/galaxy/spaces/mms/pages/126224095/MMS+Fall+2022+Science+Working+Team+Meeting 
-Occurrence of Dipolarization Fronts at Magnetotail Plasma Jets	Talk	talk-13	Swedish Space Plasma Meeting	2022-06-10	Umeå, Sweden	 
-Ion Acceleration at Magnetotail Plasma Jets	Invited Talk	talk-14	8th MMS Workshop	2022-05-11	Daytona Beach, FL, USA	https://commons.erau.edu/mms-conference/2022/wednesday/7/ 	 
-Ion Acceleration at Magnetotail Turbulent Plasma Jet Frontss	Talk	talk-15	EGU General Assembly	2022-05-27	online	https://meetingorganizer.copernicus.org/EGU22/sessionprogramme
-Turbulent Jet Fronts and Related Particle Acceleration	Talk	talk-16	GEM Workshop	2021-07-23	online	
-MMS Observations of Short-Period Current Sheet Flapping	Talk	talk-17	GEM Workshop	2020-07-22	online	
-MMS Observations of Short-Period Current Sheet Flapping	Talk	talk-18	MMS Community Workshop	2020-04-16	online	https://lasp.colorado.edu/galaxy/spaces/mms/pages/62738255/2020+SWT+-+Discussion+Session+on+Magnetotail+and+Inner+Magnetospheric+Dynamics
-MMS Observations of Short-Period Current Sheet Flapping	Talk	talk-19	Swedish Space Plasma Meeting	2020-03-03	Stockholm, Sweden	 
+Occurrence of Dipolarization Fronts at Magnetotail Plasma Jets	Talk	talk-11	Swedish Space Plasma Meeting	2022-06-10	Umeå, Sweden	 https://www.space.irfu.se/workshops/programme/Swedish_Space_Plasma_Physics_Meeting_2022_programme.pdf
+Ion Acceleration at Magnetotail Plasma Jets	Invited Talk	talk-10	8th MMS Workshop	2022-05-11	Daytona Beach, FL, USA	https://commons.erau.edu/mms-conference/2022/wednesday/7/ 	 
+Ion Acceleration at Magnetotail Turbulent Plasma Jet Frontss	Talk	talk-9	EGU General Assembly	2022-05-27	online	https://meetingorganizer.copernicus.org/EGU22/sessionprogramme
+Energy Conversion and Particle Acceleration at Turbulent Plasma Jet Fronts	Talk	talk-8	Uppsala University Astronomy/Space Physics seminars	2022-01-12	Uppsala, Sweden	 https://indico.uu.se/event/1004/
+Turbulent Jet Fronts and Related Particle Acceleration	Talk	talk-7	GEM Workshop	2021-07-23	online	
+Dynamical Systems and Machine Learning Approaches to Sun-Earth Relations	Talk	talk-6	IRF-U seminars	2021-03-10	Uppsala, Sweden	 https://www.space.irfu.se/seminars/
+Observations of Short-Period Ion-Scale Current Sheet Flapping	Talk	talk-5	IRF-U seminars	2021-02-10	Uppsala, Sweden	 https://www.space.irfu.se/seminars/
+MMS Observations of Short-Period Current Sheet Flapping	Talk	talk-4	GEM Workshop	2020-07-22	online	
+MMS Observations of Short-Period Current Sheet Flapping	Talk	talk-3	MMS Community Workshop	2020-04-16	online	https://lasp.colorado.edu/galaxy/spaces/mms/pages/62738255/2020+SWT+-+Discussion+Session+on+Magnetotail+and+Inner+Magnetospheric+Dynamics
+MMS Observations of Short-Period Current Sheet Flapping	Talk	talk-2	Swedish Space Plasma Meeting	2020-03-03	Stockholm, Sweden	 
+MMS Observations of Short-Period Current Sheet Flapping	Talk	talk-1	IRF-U seminars	2020-02-21	Uppsala, Sweden	https://www.space.irfu.se/seminars/
+
+
+
+
+
+
+
+
+
 
