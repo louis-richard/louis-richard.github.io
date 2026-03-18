@@ -8,4 +8,4 @@ date: 2024-09-01
 location: "Uppsala, Sweden"
 ---
 
-Teaching assistant for the undergraduate course Electromagnetic Field Theory. Led problem-solving sessions and delivered four full lecture.
+Teaching assistant for the undergraduate course Electromagnetic Field Theory. Led problem-solving sessions and delivered one full lecture.
