@@ -20,7 +20,11 @@ Education
 
 Work experience
 ===============
-* 01/04/2024 – present: Postdoctoral researcher
+* Starting 01/08/2026: Marie Skłodowska-Curie postdoctoral fellow
+  * Rudolf Peierls Centre for Theoretical Physics, University of Oxford, United Kingdom
+  * Advisor: Prof. A. A. Schekochihin
+  
+* 01/04/2024 – 30/06/2026: Postdoctoral researcher
   * Swedish Institute of Space Physics (IRF) 	Uppsala, Sweden
   * Advisor: Prof. Yu. V. Khotyaintsev
 
