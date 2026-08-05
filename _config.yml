@@ -26,13 +26,14 @@ author:
   avatar           : "profile.png"
   name             : "Louis Richard"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral researcher"
-  location         : "Uppsala, Sweden"
+  bio              : "Marie Skłodowska-Curie Postdoctoral Fellow"
+  location         : "Oxford, United Kingdom"
   employer         : |
-    Swedish Institute of Space
-    Physics (IRF) - Uppsala
+    Rudolf Peierls Centre for 
+    Theoretical Physics, 
+    University of Oxford
   uri              : # URL
-  email            : "louis.richard@irf.se" 
+  email            : "louis.richard@physics.ox.ac.uk" 
 
   # Academic websites
   academia         : # URL

@@ -20,7 +20,7 @@ Education
 
 Work experience
 ===============
-* Starting 01/08/2026: Marie Skłodowska-Curie postdoctoral fellow
+* 01/08/2026 - present: Marie Skłodowska-Curie postdoctoral fellow
   * Rudolf Peierls Centre for Theoretical Physics, University of Oxford, United Kingdom
   * Advisor: Prof. A. A. Schekochihin
   
