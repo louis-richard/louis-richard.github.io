@@ -29,6 +29,19 @@ import re
 my_name = "L. Richard"
 max_authors = 10
 
+#journal names as they may appear in the bib file -> abbreviation shown on the site
+journal_abbrev = {
+    "Space Sci Rev": "Space Sci. Rev.",
+    "Space Science Reviews": "Space Sci. Rev.",
+    "JGR Space Physics": "J. Geophys. Res. Space Phys.",
+    "J. Geophys. Res.": "J. Geophys. Res. Space Phys.",
+}
+
+#surname -> initials, for authors whose initials do not follow from the bib entry
+name_overrides = {
+    "Khotyaintsev": "Yu. V.",
+}
+
 publist = {
     "proceeding": {
         "file" : "proceedings.bib",
@@ -56,6 +69,16 @@ html_escape_table = {
 def html_escape(text):
     """Produce entities within text."""
     return "".join(html_escape_table.get(c,c) for c in text)
+
+def initials(first_name):
+    """Abbreviate a first name to initials, e.g. Louis -> L., Lai-Jun -> L.-J., Yu. -> Yu."""
+    return "-".join(p if p.endswith(".") else p[:1]+"." for p in first_name.split("-"))
+
+def short_name(author):
+    """Initials and surname, e.g. Khotyaintsev, Yuri V. -> Yu. V. Khotyaintsev"""
+    last = " ".join(author.prelast_names+author.last_names)
+    first = name_overrides.get(last, " ".join(initials(n) for n in author.first_names+author.middle_names))
+    return first+" "+last
 
 
 for pubsource in publist:
@@ -103,8 +126,7 @@ for pubsource in publist:
             citation = ""
 
             #citation authors - keep multi-word surnames (e.g. Le Contel) and truncate long author lists
-            authors = [author.first_names[0]+" "+" ".join(author.prelast_names+author.last_names)
-                       for author in bibdata.entries[bib_id].persons["author"]]
+            authors = [short_name(author) for author in bibdata.entries[bib_id].persons["author"]]
             if len(authors) > max_authors:
                 citation = " "+",  ".join(authors[:3])+" et al."
                 if my_name in authors[3:]:
@@ -119,6 +141,7 @@ for pubsource in publist:
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
+            venue = journal_abbrev.get(venue, venue)
 
             citation = citation + " " + venue
             citation = citation + ", " + pub_year + "."
