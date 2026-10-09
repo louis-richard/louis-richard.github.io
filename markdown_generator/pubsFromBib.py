@@ -25,6 +25,10 @@ import os
 import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
+#name highlighted in truncated author lists, and the author count above which lists are truncated
+my_name = "L. Richard"
+max_authors = 10
+
 publist = {
     "proceeding": {
         "file" : "proceedings.bib",
@@ -98,17 +102,25 @@ for pubsource in publist:
             #Build Citation from text
             citation = ""
 
-            #citation authors - todo - add highlighting for primary author?
-            for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
+            #citation authors - keep multi-word surnames (e.g. Le Contel) and truncate long author lists
+            authors = [author.first_names[0]+" "+" ".join(author.prelast_names+author.last_names)
+                       for author in bibdata.entries[bib_id].persons["author"]]
+            if len(authors) > max_authors:
+                citation = " "+",  ".join(authors[:3])+" et al."
+                if my_name in authors[3:]:
+                    citation = citation+" (incl. "+my_name+")"
+                citation = citation+", "
+            else:
+                for author in authors:
+                    citation = citation+" "+author+", "
 
-            #citation title
-            citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
+            #citation title (escaped once, together with the rest of the citation, below)
+            citation = citation + "\"" + b["title"].replace("{", "").replace("}","").replace("\\","") + ".\""
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
 
-            citation = citation + " " + html_escape(venue)
+            citation = citation + " " + venue
             citation = citation + ", " + pub_year + "."
 
             

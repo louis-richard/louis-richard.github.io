@@ -1,39 +1,19 @@
 ---
 permalink: /terms/
-title: "Terms and Privacy Policy"
-modified: 2016-06-06
+title: "Privacy Policy"
+modified: 2026-10-09
 ---
 
-{% include base_path %}
-{% include toc %}
+This website is a static site hosted on [GitHub Pages](https://pages.github.com/). It has no user accounts, no comment system, no analytics, and it does not set any cookies of its own.
 
-## Privacy Policy
+### Hosting
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+GitHub may log technical information about visits, such as IP addresses, to operate and secure the service. See the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+### Third-party content
 
-### Log Files
+The publications page embeds citation and attention badges from [Dimensions](https://www.dimensions.ai/), [Altmetric](https://www.altmetric.com/) and [PlumX](https://plumanalytics.com/). Loading that page sends requests to these services, which are governed by their own privacy policies. Icons and fonts may also be loaded from public content delivery networks.
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+### Contact
 
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
-
-All of this information is not linked to anything that is personally identifiable.
-
-### Cookies and Web Beacons
-
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](https://disqus.com) the next time you leave a comment.
-
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
-
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
-
-#### Google Analytics
-
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](https://www.google.com/analytics/learn/privacy.html).
+If you email me, I will use your address only to reply and will not share it with anyone without your consent.
