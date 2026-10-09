@@ -10,7 +10,7 @@ pyrfu
 
 **pyrfu** (Python RymdFysik Utilities) is an open-source Python package for in-situ space plasma data analysis. It covers the Magnetospheric Multiscale (MMS) mission, from data access to particle distributions and wave analysis, as well as general plasma physics tools. I created, develop, and maintain pyrfu which is distributed under the MIT licence.
 
-[Documentation](https://pyrfu.readthedocs.io/en/latest/){:target="_blank"} · [Source code on GitHub](https://github.com/louis-richard/irfu-python){:target="_blank"} · [PyPI](https://pypi.org/project/pyrfu/){:target="_blank"} · [Zenodo](https://doi.org/10.5281/zenodo.10678695){:target="_blank"}
+[Documentation](https://pyrfu.readthedocs.io/en/){:target="_blank"} · [Source code on GitHub](https://github.com/louis-richard/irfu-python){:target="_blank"} · [PyPI](https://pypi.org/project/pyrfu/){:target="_blank"} · [Zenodo](https://doi.org/10.5281/zenodo.10678695){:target="_blank"}
 
 Features
 --------
