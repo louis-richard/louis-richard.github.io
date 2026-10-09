@@ -5,8 +5,9 @@ permalink: /publication/2026-08-01-Statistical-Study-of-Betatron-and-Fermi-Elect
 category: manuscripts
 date: 2026-08-01
 venue: 'Geophys. Res. Lett.'
+authors: 'A. Kolokotronis, D. B. Graham, Yu. V. Khotyaintsev, C. Norgren, K. Steinvall, L. Richard'
 doi: '10.1029/2026GL122885'
 paperurl: 'https://doi.org/10.1029/2026GL122885'
-citation: ' A. Kolokotronis,  D. B. Graham,  Yu. V. Khotyaintsev,  C. Norgren,  K. Steinvall,  L. Richard, &quot;Statistical Study of Betatron and Fermi Electron Acceleration at Dipolarization Fronts.&quot; Geophys. Res. Lett., 2026.'
+citation: 'A. Kolokotronis, D. B. Graham, Yu. V. Khotyaintsev, C. Norgren, K. Steinvall, L. Richard, &quot;Statistical Study of Betatron and Fermi Electron Acceleration at Dipolarization Fronts.&quot; Geophys. Res. Lett., 2026.'
 ---
 [Access paper here](https://doi.org/10.1029/2026GL122885){:target="_blank"}

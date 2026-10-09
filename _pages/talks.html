@@ -5,15 +5,23 @@ permalink: /talks/
 author_profile: true
 ---
 
+{% include base_path %}
+
 {% assign talk_type_order = "Invited Talk,Talk" | split: "," %}
 
 {% for ttype in talk_type_order %}
   <h2>{{ ttype }}s</h2>
-  <hr />
-
+  <ul class="talk-list">
   {% for post in site.talks reversed %}
     {% if post.type == ttype %}
-      {% include archive-single-talk.html %}
+    <li class="talk">
+      <span class="talk__date">{{ post.date | date: "%b %Y" }}</span>
+      <div>
+        <a class="talk__title" href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+        <span class="talk__meta">{{ post.venue }}{% if post.location %} · {{ post.location }}{% endif %}</span>
+      </div>
+    </li>
     {% endif %}
   {% endfor %}
+  </ul>
 {% endfor %}

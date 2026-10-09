@@ -5,8 +5,9 @@ permalink: /publication/2026-06-01-Occurrence-of-Flat-Top-Electron-Velocity-Dist
 category: manuscripts
 date: 2026-06-01
 venue: 'Geophys. Res. Lett.'
+authors: 'L. Richard, Yu. V. Khotyaintsev, C. Norgren'
 doi: '10.1029/2026GL123161'
 paperurl: 'https://doi.org/10.1029/2026GL123161'
-citation: ' L. Richard,  Yu. V. Khotyaintsev,  C. Norgren, &quot;Occurrence of Flat-Top Electron Velocity Distributions in Magnetotail Plasma Jets.&quot; Geophys. Res. Lett., 2026.'
+citation: 'L. Richard, Yu. V. Khotyaintsev, C. Norgren, &quot;Occurrence of Flat-Top Electron Velocity Distributions in Magnetotail Plasma Jets.&quot; Geophys. Res. Lett., 2026.'
 ---
 [Access paper here](https://doi.org/10.1029/2026GL123161){:target="_blank"}

@@ -5,8 +5,9 @@ permalink: /publication/2026-02-01-Ion-Temperature-Anisotropy-Limits-from-Magnet
 category: manuscripts
 date: 2026-02-01
 venue: 'Phys. Plasmas'
+authors: 'L. Richard, A. V. Artemyev, C. Norgren, X. An, S. R. Kamaletdinov, Yu. V. Khotyaintsev'
 doi: '10.1063/5.0313635'
 paperurl: 'https://doi.org/10.1063/5.0313635'
-citation: ' L. Richard,  A. V. Artemyev,  C. Norgren,  X. An,  S. R. Kamaletdinov,  Yu. V. Khotyaintsev, &quot;Ion Temperature Anisotropy Limits from Magnetic Curvature Scattering in Magnetotail Reconnection Jets.&quot; Phys. Plasmas, 2026.'
+citation: 'L. Richard, A. V. Artemyev, C. Norgren, X. An, S. R. Kamaletdinov, Yu. V. Khotyaintsev, &quot;Ion Temperature Anisotropy Limits from Magnetic Curvature Scattering in Magnetotail Reconnection Jets.&quot; Phys. Plasmas, 2026.'
 ---
 [Access paper here](https://doi.org/10.1063/5.0313635){:target="_blank"}

@@ -1,0 +1,389 @@
+/* ==========================================================================
+   SITE-SPECIFIC STYLES
+   Publications and talks lists
+   ========================================================================== */
+
+/*
+   Publications
+   ========================================================================== */
+
+.pub {
+  padding: 0.9em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  .archive__item-title {
+    margin: 0 0 0.3em;
+    font-size: $type-size-5;
+    line-height: 1.35;
+  }
+
+  p {
+    margin: 0;
+    font-size: $type-size-6;
+    line-height: 1.5;
+  }
+
+  strong {
+    color: var(--global-text-color);
+  }
+}
+
+.pub__authors,
+.pub__venue {
+  color: var(--global-muted-text-color);
+}
+
+.pub__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+.pub__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.pub__link {
+  display: inline-block;
+  padding: 0.1em 0.75em;
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--global-link-color) !important;
+  text-decoration: none;
+  border: 1px solid var(--global-link-color);
+  border-radius: 999px;
+  transition: $global-transition;
+
+  &:hover {
+    background-color: var(--global-accent-soft-color);
+  }
+
+  i {
+    margin-right: 0.3em;
+  }
+}
+
+.pub__metrics {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  zoom: 0.7; // the smallest badge styles are still ~64px tall
+
+  .altmetric-embed,
+  .__dimensions_badge_embed__ {
+    line-height: 0;
+  }
+}
+
+/*
+   Talks
+   ========================================================================== */
+
+.talk-list {
+  margin: 0 0 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.talk {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0.6em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  @include breakpoint($small) {
+    grid-template-columns: 6.5em 1fr;
+    column-gap: 1em;
+  }
+}
+
+.talk__date {
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  color: var(--global-muted-text-color);
+  white-space: nowrap;
+
+  @include breakpoint($small) {
+    padding-top: 0.2em;
+  }
+}
+
+.talk__title {
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.talk__meta {
+  display: block;
+  font-size: $type-size-6;
+  color: var(--global-muted-text-color);
+}
+
+/*
+   Link underlines: the archive layout underlines every link, which is
+   too heavy for list titles and pill buttons; underline titles on hover only
+   ========================================================================== */
+
+.archive {
+  .pub .archive__item-title a,
+  .talk__title {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .pub__link,
+  .pub__link:hover {
+    text-decoration: none;
+  }
+}
+
+/*
+   Inverse buttons (e.g. the sidebar "Follow" button on small screens)
+   turn their text white on hover, so give them a background to match
+   ========================================================================== */
+
+.btn--inverse:hover {
+  background-color: var(--global-base-color);
+}
+
+/*
+   CV
+   ========================================================================== */
+
+.cv {
+  h2 {
+    margin: 1.8em 0 0.6em;
+    padding-bottom: 0.25em;
+    font-size: $type-size-4;
+    color: var(--global-base-color);
+    border-bottom: 2px solid var(--global-base-color);
+  }
+
+  h3 {
+    margin: 1.2em 0 0.2em;
+    font-size: $type-size-5;
+    color: var(--global-muted-text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+html[data-theme="dark"] .cv h2 {
+  color: var(--global-link-color);
+  border-bottom-color: var(--global-link-color);
+}
+
+.cv__actions {
+  margin: 0;
+  text-align: right;
+
+  button.pub__link {
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.55em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  @include breakpoint($small) {
+    grid-template-columns: 9.5em 1fr;
+    column-gap: 1em;
+  }
+}
+
+.cv-entry__when {
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  color: var(--global-muted-text-color);
+  white-space: nowrap;
+
+  @include breakpoint($small) {
+    padding-top: 0.25em;
+  }
+}
+
+.cv-entry__what {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cv-entry__where,
+.cv-entry__note {
+  font-size: $type-size-6;
+  line-height: 1.5;
+  color: var(--global-muted-text-color);
+}
+
+.cv-entry__note em {
+  color: var(--global-text-color);
+}
+
+.archive .cv-entry__what a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.cv-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0.25em 0.4em 0.25em 0.8em;
+    font-size: $type-size-6;
+    border: 1px solid var(--global-border-color);
+    border-radius: 999px;
+  }
+
+  span {
+    display: inline-block;
+    min-width: 1.6em;
+    margin-left: 0.4em;
+    padding: 0 0.45em;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: var(--global-base-color);
+    border-radius: 999px;
+  }
+}
+
+.cv-pubs {
+  margin: 0;
+  padding-left: 2em;
+
+  li {
+    margin: 0;
+    padding: 0.45em 0;
+    border-bottom: 1px solid var(--global-border-color);
+
+    &::marker {
+      font-size: $type-size-6;
+      color: var(--global-muted-text-color);
+    }
+  }
+}
+
+.cv-pubs__title {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.archive .cv-pubs__title {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.cv-pubs__meta {
+  display: block;
+  font-size: $type-size-6;
+  line-height: 1.5;
+  color: var(--global-muted-text-color);
+
+  strong {
+    color: var(--global-text-color);
+  }
+}
+
+.cv-tag {
+  display: inline-block;
+  margin-left: 0.3em;
+  padding: 0 0.5em;
+  font-size: $type-size-7;
+  font-weight: 600;
+  line-height: 1.6;
+  vertical-align: middle;
+  color: var(--global-base-color);
+  background-color: var(--global-accent-soft-color);
+  border-radius: 999px;
+}
+
+html[data-theme="dark"] .cv-tag {
+  color: var(--global-link-color);
+}
+
+/*
+   Printing (e.g. "Save as PDF" on the CV): keep only the page content
+   ========================================================================== */
+
+.cv__print-header {
+  display: none;
+}
+
+@media print {
+  .masthead,
+  .sidebar,
+  .page__footer,
+  .page__title,
+  .cv__actions {
+    display: none !important;
+  }
+
+  .cv__print-header {
+    display: block;
+    margin-bottom: 1em;
+
+    p {
+      margin: 0;
+      font-size: $type-size-6;
+      color: var(--global-muted-text-color);
+    }
+
+    .cv__print-name {
+      font-size: $type-size-3;
+      font-weight: 700;
+      color: var(--global-base-color);
+    }
+  }
+
+  .cv h2:first-of-type {
+    margin-top: 0.5em;
+  }
+
+  #main,
+  .archive {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .cv h2 {
+    break-after: avoid;
+  }
+
+  .cv-entry,
+  .cv-pubs li,
+  .talk {
+    break-inside: avoid;
+  }
+
+  .archive a {
+    color: inherit;
+  }
+}

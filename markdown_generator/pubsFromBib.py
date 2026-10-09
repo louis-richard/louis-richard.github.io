@@ -122,22 +122,17 @@ for pubsource in publist:
             md_filename = (str(pub_date) + "-" + url_slug + ".md").replace("--","-")
             html_filename = (str(pub_date) + "-" + url_slug).replace("--","-")
 
-            #Build Citation from text
-            citation = ""
-
             #citation authors - keep multi-word surnames (e.g. Le Contel) and truncate long author lists
             authors = [short_name(author) for author in bibdata.entries[bib_id].persons["author"]]
             if len(authors) > max_authors:
-                citation = " "+",  ".join(authors[:3])+" et al."
+                author_list = ", ".join(authors[:3])+" et al."
                 if my_name in authors[3:]:
-                    citation = citation+" (incl. "+my_name+")"
-                citation = citation+", "
+                    author_list = author_list+" (incl. "+my_name+")"
             else:
-                for author in authors:
-                    citation = citation+" "+author+", "
+                author_list = ", ".join(authors)
 
-            #citation title (escaped once, together with the rest of the citation, below)
-            citation = citation + "\"" + b["title"].replace("{", "").replace("}","").replace("\\","") + ".\""
+            #Build Citation from text; the title is escaped once, together with the rest of the citation, below
+            citation = author_list + ", \"" + b["title"].replace("{", "").replace("}","").replace("\\","") + ".\""
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
@@ -163,6 +158,8 @@ for pubsource in publist:
             md += "\ndate: " + str(pub_date) 
 
             md += "\nvenue: '" + html_escape(venue) + "'"
+
+            md += "\nauthors: '" + html_escape(author_list) + "'"
             
             url = False
             if "url" in b.keys():

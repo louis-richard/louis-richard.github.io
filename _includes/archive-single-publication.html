@@ -1,0 +1,31 @@
+{% include base_path %}
+
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% capture highlighted_name %}<strong>{{ site.publication_highlight_name }}</strong>{% endcapture %}
+{% assign authors = post.authors | default: post.citation | replace: site.publication_highlight_name, highlighted_name %}
+
+<div class="list__item">
+  <article class="archive__item pub" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h2>
+    <p class="pub__authors">{{ authors }}</p>
+    <p class="pub__venue"><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+
+    {% if post.paperurl or post.slidesurl or post.bibtexurl or post.doi %}
+    <div class="pub__footer">
+      <div class="pub__links">
+        {% if post.paperurl %}<a class="pub__link" href="{{ post.paperurl }}" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>{% if post.doi %}DOI{% else %}Paper{% endif %}</a>{% endif %}
+        {% if post.slidesurl %}<a class="pub__link" href="{{ post.slidesurl }}" target="_blank" rel="noopener"><i class="fas fa-person-chalkboard" aria-hidden="true"></i>Slides</a>{% endif %}
+        {% if post.bibtexurl %}<a class="pub__link" href="{{ post.bibtexurl }}"><i class="fas fa-quote-right" aria-hidden="true"></i>BibTeX</a>{% endif %}
+      </div>
+      {% if post.doi %}
+      <div class="pub__metrics">
+        <span class="__dimensions_badge_embed__" data-doi="{{ post.doi }}" data-style="small_circle" data-hide-zero-citations="true"></span>
+        <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-link-target="_blank" data-doi="{{ post.doi }}" data-hide-no-mentions="true"></div>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </article>
+</div>

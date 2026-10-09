@@ -26,7 +26,7 @@ The site is then served at http://localhost:4000 and rebuilds on changes, except
 | Talks | `_talks/` |
 | Teaching | `_teaching/` |
 | News and press releases | `_posts/` |
-| Profile picture | `images/profile.png` |
+| Profile picture | `images/profile.jpg` (400×400 JPEG) |
 | Downloadable files (served at `/files/...`) | `files/` |
 
 Every entry in `_talks/` and `_teaching/` needs a unique `permalink`, or one page silently overwrites another.

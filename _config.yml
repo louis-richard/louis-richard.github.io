@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "oxford"  # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast", plus the custom "oxford"
 title                    : "Louis Richard"
 title_separator          : "-"
 name                     : &name "Louis Richard"
@@ -23,15 +23,16 @@ repository               : "louis-richard/louis-richard.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Louis Richard"
   pronouns         : # example: "she/her"  
-  bio              : "Marie Skłodowska-Curie Postdoctoral Fellow"
+  bio              : "🇪🇺 Marie Skłodowska-Curie Postdoctoral Fellow"
   location         : "Oxford, United Kingdom"
   employer         : |
     Rudolf Peierls Centre for 
     Theoretical Physics, 
     University of Oxford
+  employer_url     : "https://www.physics.ox.ac.uk/research/subdepartment/rudolf-peierls-centre-theoretical-physics"
   uri              : # URL
   email            : "louis.richard@physics.ox.ac.uk" 
 
@@ -84,6 +85,9 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+
+# Name shown in bold in the author lists of the publications page
+publication_highlight_name: "L. Richard"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:

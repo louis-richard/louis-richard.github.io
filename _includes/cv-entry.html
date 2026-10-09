@@ -1,0 +1,9 @@
+<!-- One CV timeline row. Parameters: when, what, url (optional), where (optional), note (optional, may contain HTML) -->
+<div class="cv-entry">
+  <div class="cv-entry__when">{{ include.when }}</div>
+  <div class="cv-entry__body">
+    <div class="cv-entry__what">{% if include.url %}<a href="{{ include.url }}" target="_blank" rel="noopener">{{ include.what }}</a>{% else %}{{ include.what }}{% endif %}</div>
+    {% if include.where %}<div class="cv-entry__where">{{ include.where }}</div>{% endif %}
+    {% if include.note %}<div class="cv-entry__note">{{ include.note }}</div>{% endif %}
+  </div>
+</div>

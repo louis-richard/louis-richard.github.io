@@ -1,0 +1,146 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
+---
+
+{% include base_path %}
+{% capture highlighted_name %}<strong>{{ site.publication_highlight_name }}</strong>{% endcapture %}
+
+<div class="cv">
+
+<div class="cv__print-header">
+  <p class="cv__print-name">{{ site.author.name }}</p>
+  <p>{{ site.author.bio }} · {{ site.author.employer | strip_newlines }}</p>
+  <p>{{ site.author.email }} · {{ site.url | remove: "https://" }}</p>
+</div>
+
+<p class="cv__actions">
+  <button class="pub__link" type="button" onclick="window.print()"><i class="fas fa-file-pdf" aria-hidden="true"></i>Save as PDF</button>
+</p>
+
+<h2>Education</h2>
+
+{% include cv-entry.html when="2024" what="Ph.D. in Physics with Specialization in Space and Plasma Physics"
+   where="Swedish Institute of Space Physics and Uppsala University" %}
+{% include cv-entry.html when="2019" what="M.Sc. in Fluid Mechanics"
+   where="École Polytechnique" %}
+{% include cv-entry.html when="2018" what="M.Sc. in Undergraduate Teaching in Mechanical Engineering"
+   where="École Normale Supérieure Paris – Saclay" %}
+{% include cv-entry.html when="2017" what="M.Sc. in Mechanical Engineering"
+   where="École Normale Supérieure Paris – Saclay" %}
+{% include cv-entry.html when="2016" what="B.Sc. in Engineering with a major in Mechanical Engineering"
+   where="École Normale Supérieure Paris – Saclay" %}
+{% include cv-entry.html when="2014 – 2015" what="Classes Préparatoires aux Grandes Écoles"
+   where="Lycée Lamartinière Monplaisir" %}
+
+<h2>Work experience</h2>
+
+{% include cv-entry.html when="Aug 2026 – present" what="Marie Skłodowska-Curie Postdoctoral Fellow"
+   where="Rudolf Peierls Centre for Theoretical Physics, University of Oxford, United Kingdom"
+   note="Advisor: Prof. A. A. Schekochihin" %}
+{% include cv-entry.html when="Apr 2024 – Jun 2026" what="Postdoctoral Researcher"
+   where="Swedish Institute of Space Physics (IRF), Uppsala, Sweden"
+   note="Advisor: Prof. Yu. V. Khotyaintsev" %}
+{% include cv-entry.html when="Mar 2025 – Apr 2025" what="Visiting Research Assistant"
+   where="Department of Earth, Planetary, and Space Sciences (EPSS), University of California, Los Angeles, USA"
+   note="Advisor: Dr. A. V. Artemyev" %}
+{% include cv-entry.html when="Oct 2019 – Mar 2024" what="Ph.D. Candidate"
+   where="Swedish Institute of Space Physics (IRF), Uppsala, Sweden"
+   note="Advisors: Prof. Yu. V. Khotyaintsev, Dr. D. B. Graham, Prof. A. Vaivads, Dr. E. Yordanova" %}
+
+<h2>Research grants</h2>
+
+{% include cv-entry.html when="2025" what="Marie Skłodowska-Curie Postdoctoral Fellowship"
+   url="https://cordis.europa.eu/project/id/101272207"
+   where="European Commission"
+   note="<em>Microscale Dynamics and Non-Maxwellian Equilibria: Decoding Collisionless Processes in the Space Plasmas</em><br>€260,347.92 · Total score 97.8/100" %}
+{% include cv-entry.html when="2025" what="International Postdoc Grant in Natural and Engineering Sciences"
+   where="The Swedish Research Council (VR)"
+   note="<em>Microscale Dynamics and Non-Maxwellian Equilibria: Decoding Collisionless Processes in the Space Plasmas</em><br>3,900,000 SEK · Overall score 7/7" %}
+{% include cv-entry.html when="2024" what="Scholarship in Astronomy and Space Sciences"
+   where="Royal Swedish Academy of Sciences (KVA)"
+   note="<em>Limits on Ion Temperature Anisotropy in Magnetic Reconnection Jets</em><br>40,000 SEK" %}
+
+<h2>Academic service</h2>
+
+{% include cv-entry.html when="Oct 2025" what="Member of the Science Organising Committee"
+   where="Cluster – Plasma Observatory workshop" %}
+{% include cv-entry.html when="May 2025" what="Member of the Science Organising Committee"
+   where="MMS science community workshop" %}
+{% include cv-entry.html when="Sep 2024 – present" what="Organiser"
+   where="IRF Uppsala Space Plasma Physics Seminars" %}
+{% include cv-entry.html when="Mar 2024" what="Organiser"
+   where="IRF Uppsala Workshop on Python for Space Physics" %}
+
+<h2>Reviewing</h2>
+
+<ul class="cv-pills">
+  <li>The Astrophysical Journal <span>2</span></li>
+  <li>Geophysical Research Letters <span>2</span></li>
+  <li>Journal of Geophysical Research: Space Physics <span>5</span></li>
+  <li>Journal of Plasma Physics <span>1</span></li>
+  <li>Nature Communications <span>1</span></li>
+</ul>
+
+<h2>Supervision</h2>
+
+<h3>Doctoral students</h3>
+
+{% include cv-entry.html when="Oct 2025 – present" what="Iñaki Vigo-Vidal"
+   where="The onset of magnetic reconnection"
+   note="Co-supervised with Dr. C. Norgren and Prof. Yu. V. Khotyaintsev" %}
+{% include cv-entry.html when="Dec 2023 – present" what="Jack White"
+   where="Electron energisation by magnetic reconnection"
+   note="Co-supervised with Prof. Yu. V. Khotyaintsev, Dr. D. B. Graham and Dr. C. Norgren" %}
+
+<h3>B.Sc. and M.Sc. students</h3>
+
+{% include cv-entry.html when="Apr 2025 – Jun 2025" what="Iñaki Vigo-Vidal, M.Sc. Uppsala University"
+   where="Statistics of current sheets in the Earth’s magnetotail"
+   url="https://uu.diva-portal.org/smash/record.jsf?dswid=-5584&pid=diva2%3A1978205&c=1&searchType=SIMPLE&language=en&query=I%C3%B1aki+Vigo-Vidal&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all" %}
+{% include cv-entry.html when="Nov 2024 – Feb 2025" what="Iñaki Vigo-Vidal"
+   where="Non-adiabatic electron motion in current sheets" %}
+{% include cv-entry.html when="Jan 2023 – Jun 2023" what="Atlas Silverhult, B.Sc. Uppsala University"
+   where="Orientation of Plasma Jet Fronts in the Earth's Magnetotail"
+   url="https://uu.diva-portal.org/smash/record.jsf?dswid=-5584&pid=diva2%3A1782225&c=3&searchType=SIMPLE&language=en&query=Atlas+Silverhult&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all"
+   note="Co-supervised with Prof. Yu. V. Khotyaintsev" %}
+
+<h2>Teaching</h2>
+
+{% for post in site.teaching reversed %}
+  {% capture teaching_when %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture teaching_where %}{{ post.type }} · {{ post.venue }}{% endcapture %}
+  {% include cv-entry.html when=teaching_when what=post.title where=teaching_where %}
+{% endfor %}
+
+<h2>Publications</h2>
+
+<ol class="cv-pubs" reversed>
+{% for post in site.publications reversed %}
+  {% assign authors = post.authors | default: post.citation | replace: site.publication_highlight_name, highlighted_name %}
+  <li>
+    <a class="cv-pubs__title" href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    <span class="cv-pubs__meta">{{ authors }} · <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</span>
+  </li>
+{% endfor %}
+</ol>
+
+<h2>Talks</h2>
+
+<ul class="talk-list">
+{% for post in site.talks reversed %}
+  <li class="talk">
+    <span class="talk__date">{{ post.date | date: "%b %Y" }}</span>
+    <div>
+      <a class="talk__title" href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>{% if post.type == "Invited Talk" %} <span class="cv-tag">Invited</span>{% endif %}
+      <span class="talk__meta">{{ post.venue }}{% if post.location %} · {{ post.location }}{% endif %}</span>
+    </div>
+  </li>
+{% endfor %}
+</ul>
+
+</div>

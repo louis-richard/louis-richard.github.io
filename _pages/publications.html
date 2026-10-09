@@ -7,98 +7,29 @@ author_profile: true
 
 {% if site.author.googlescholar %}
 <div class="wordwrap">
-  You can also find my articles on 
+  You can also find my articles on
   <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
 </div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- Scripts should be loaded only once -->
+<!-- Citation and attention badges, loaded once for the whole page -->
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-<script type="text/javascript" src="https://embed.altmetric.com/assets/embed.js"></script>
-<script type="text/javascript" src="//cdn.plu.mx/widget-summary.js"></script>
+<script async src="https://embed.altmetric.com/assets/embed.js"></script>
 
-<style>
-  .metrics-box {
-    background: white;
-    color: black;
-    border-radius: 0.6em;
-    padding: 0.3em 0.1em;
-    margin-bottom: 0.6em;
-    max-width: 520px;
-  }
-  
-  .metrics-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transform: scale(1);
-    transform-origin: center;
-  }
-</style>
-
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2>
-        <hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-
-      <!-- Render the publication -->
-      {% include archive-single.html %}
-
-      {% if post.doi %}
-      <div class="metrics-box">
-
-        <div class="metrics-inner">
-
-          <!-- Dimensions -->
-          <span
-            class="__dimensions_badge_embed__"
-            data-doi="{{ post.doi }}"
-            data-hide-zero-citations="true"
-            data-legend="always">
-          </span>
-
-          <!-- Altmetric -->
-          <div
-            class="altmetric-embed"
-            data-link-target="_blank"
-            data-badge-type="medium-donut"
-            data-doi="{{ post.doi }}"
-            data-condensed="true"
-            data-hide-no-mentions="true">
-          </div>
-
-        </div>
-      </div>
-      {% endif %}
-
-    {% endfor %}
-  {% endfor %}
-
-{% else %}
-
+{% for category in site.publication_category %}
+  {% assign title_shown = false %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-
-    {% if post.doi %}
-      <div class="altmetric-embed"
-           data-badge-type="donut"
-           data-doi="{{ post.doi }}">
-      </div>
+    {% if post.category != category[0] %}
+      {% continue %}
     {% endif %}
 
-  {% endfor %}
+    {% unless title_shown %}
+      <h2>{{ category[1].title }}</h2>
+      {% assign title_shown = true %}
+    {% endunless %}
 
-{% endif %}
+    {% include archive-single-publication.html %}
+  {% endfor %}
+{% endfor %}
